@@ -30,7 +30,7 @@ StayEase is a full-stack web and mobile application platform designed to simplif
 - Dashboard showing stats (Landlords, Tenants, Properties, Bookings, Complaints)
 - Manage Landlords and Tenants
 - Manage Property Listings
-  - Delete = Archive
+
 
 
 ### Landlord
@@ -38,7 +38,7 @@ StayEase is a full-stack web and mobile application platform designed to simplif
 - Add, update, and delete property listings
 - View tenant bookings
 - Manage tenant complaints
-- Profile management
+
 
 ###  Tenant
 - Register and login
