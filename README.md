@@ -1,4 +1,4 @@
-# StayEase – Room/PG Rental Platform
+# StayEase – Room/PG Searching Platform
 
 StayEase is a full-stack web and mobile application platform designed to simplify the process of finding and managing rental accommodations like rooms and PGs. It supports three distinct user roles – Admin, Landlord, and Tenant – each with their own set of features and interfaces.
 
