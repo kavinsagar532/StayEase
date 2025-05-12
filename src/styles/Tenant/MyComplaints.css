@@ -1,0 +1,95 @@
+.tenant-myowncomplaints-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.tenant-myowncomplaints-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #1e40af;
+  margin-bottom: 2rem;
+}
+
+.tenant-myowncomplaints-cards-container {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.tenant-myowncomplaints-card {
+  background-color: #f9fafb;
+  border-radius: 10px;
+  padding: 1.5rem;
+  border: 1px solid #e2e8f0;
+  transition: box-shadow 0.3s ease;
+}
+
+.tenant-myowncomplaints-card:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.tenant-myowncomplaints-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.tenant-myowncomplaints-header h3 {
+  margin: 0;
+  color: #1e40af;
+  font-size: 1.25rem;
+}
+
+.tenant-myowncomplaints-status {
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.tenant-myowncomplaints-status.pending {
+  background-color: #fef3c7;
+  color: #d97706;
+}
+
+.tenant-myowncomplaints-status.solved {
+  background-color: #d1fae5;
+  color: #059669;
+}
+
+.tenant-myowncomplaints-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  color: #4a5568;
+}
+
+.tenant-myowncomplaints-detail {
+  background-color: #f1f5f9;
+  padding: 0.5rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.tenant-myowncomplaints-description,
+.tenant-myowncomplaints-additional-details {
+  background-color: #f8fafc;
+  padding: 1rem;
+  border-radius: 6px;
+  border: 1px solid #e2e8f0;
+  color: #2d3748;
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  .tenant-myowncomplaints-details {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,90 @@
+.tenant-mycomplaintsubmission-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.tenant-mycomplaintsubmission-title {
+  text-align: center;
+  color: #1e40af;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.tenant-mycomplaintsubmission-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.tenant-mycomplaintsubmission-form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.tenant-mycomplaintsubmission-full-width {
+  grid-column: 1 / 3;
+}
+
+.tenant-mycomplaintsubmission-form label {
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.tenant-mycomplaintsubmission-form input,
+.tenant-mycomplaintsubmission-form textarea,
+.tenant-mycomplaintsubmission-form select {
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #cbd5e0;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  resize: none;
+}
+
+.tenant-mycomplaintsubmission-form input:focus,
+.tenant-mycomplaintsubmission-form textarea:focus,
+.tenant-mycomplaintsubmission-form select:focus {
+  outline: none;
+  border-color: #1e40af;
+  box-shadow: 0 0 0 2px rgba(30, 64, 175, 0.1);
+}
+
+.tenant-mycomplaintsubmission-submit-btn {
+  grid-column: 1 / 3;
+  padding: 0.75rem;
+  background-color: #1e40af;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.tenant-mycomplaintsubmission-submit-btn:hover {
+  background-color: #2563eb;
+  transform: translateY(-2px);
+}
+
+.tenant-mycomplaintsubmission-submit-btn:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .tenant-mycomplaintsubmission-form {
+    grid-template-columns: 1fr;
+  }
+
+  .tenant-mycomplaintsubmission-full-width,
+  .tenant-mycomplaintsubmission-submit-btn {
+    grid-column: 1;
+  }
+}
