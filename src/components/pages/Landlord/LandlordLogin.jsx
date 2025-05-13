@@ -9,8 +9,12 @@ export default function LandlordLogin() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Logging in as Landlord...");
-    navigate("/landlord/dashboard"); // Navigate to dashboard after login
+    if (username === "landlord@gmail.com" && password === "landlord") {
+      console.log("Landlord login successful");
+      navigate("/landlord/dashboard");
+    } else {
+      alert("Invalid credentials. Please try again.");
+    }
   };
 
   return (

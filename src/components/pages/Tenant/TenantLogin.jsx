@@ -9,8 +9,12 @@ export default function TenantLogin() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Logging in as Tenant...");
-    navigate("/tenant/dashboard");
+    if (username === "tenant@gmail.com" && password === "tenant") {
+      console.log("Tenant login successful");
+      navigate("/tenant/dashboard");
+    } else {
+      alert("Invalid credentials. Please try again.");
+    }
   };
 
   return (

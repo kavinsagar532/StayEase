@@ -9,8 +9,12 @@ export default function AdminLogin() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Logging in as Admin...");
-    navigate("/admin/dashboard");
+    if (username === "admin@gmail.com" && password === "admin") {
+      console.log("Admin login successful");
+      navigate("/admin/dashboard");
+    } else {
+      alert("Invalid credentials. Please try again.");
+    }
   };
 
   return (
