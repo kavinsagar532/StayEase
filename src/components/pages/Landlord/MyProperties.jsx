@@ -47,7 +47,7 @@ export default function MyProperties() {
           <div key={property.id} className="property-card">
             <div className="property-image-container">
               <img src={property.image} alt={property.title} className="property-image" />
-              <span className="property-status">{property.status}</span>
+              <span className={`property-status ${property.status.toLowerCase()}`}>{property.status}</span>
             </div>
             <div className="property-info">
               <div className="property-header">
