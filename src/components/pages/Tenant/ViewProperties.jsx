@@ -57,7 +57,7 @@ export default function ViewProperties() {
               <div className="property-header">
                 <h3>{property.title}</h3>
                 <div className="property-pricing">
-                  <p className="property-rent">₹{property.price}/month</p>
+                  <p className="property-rent">₹{property.price}/day</p>
                 </div>
               </div>
               

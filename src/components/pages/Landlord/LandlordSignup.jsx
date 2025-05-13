@@ -6,6 +6,7 @@ export default function LandlordSignup() {
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
+  const [address, setAddress] = useState("");
   const [gender, setGender] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
@@ -63,6 +64,17 @@ export default function LandlordSignup() {
               value={phoneNumber}
               onChange={(e) => setPhoneNumber(e.target.value)}
               placeholder="Enter your phone number"
+              required
+            />
+          </div>
+          <div className="landlord-signup-form-group">
+            <label htmlFor="Address">Address</label>
+            <input
+              type="text"
+              id="address"
+              value={address}
+              onChange={(e) => setAddress(e.target.value)}
+              placeholder="Enter your Address"
               required
             />
           </div>

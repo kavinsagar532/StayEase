@@ -70,7 +70,7 @@ export default function AddProperty() {
         <input
           type="number"
           name="price"
-          placeholder="Monthly Rent (₹)"
+          placeholder="Rent (₹)"
           value={formData.price}
           onChange={handleChange}
           required

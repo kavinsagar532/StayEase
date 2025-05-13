@@ -53,7 +53,7 @@ export default function MyBookings() {
               <div className="tenant-mybookings-header">
                 <h3>{booking.propertyTitle}</h3>
                 <div className="tenant-mybookings-pricing">
-                  <p className="tenant-mybookings-rent">₹{booking.price}/month</p>
+                  <p className="tenant-mybookings-rent">₹{booking.price}/day</p>
                 </div>
               </div>
               

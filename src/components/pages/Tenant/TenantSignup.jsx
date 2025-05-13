@@ -6,6 +6,7 @@ export default function TenantSignup() {
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
+  const [address, setAddress] = useState("");
   const [gender, setGender] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate(); // Hook to navigate programmatically
@@ -65,6 +66,17 @@ export default function TenantSignup() {
               value={phoneNumber}
               onChange={(e) => setPhoneNumber(e.target.value)}
               placeholder="Enter your phone number"
+              required
+            />
+          </div>
+          <div className="tenant-signup-form-group">
+            <label htmlFor="username">Address</label>
+            <input
+              type="text"
+              id="address"
+              value={address}
+              onChange={(e) => setUsername(e.target.value)}
+              placeholder="Enter your Address"
               required
             />
           </div>
