@@ -5,17 +5,17 @@ import '../../../styles/Tenant/TenantPayments.css';
 const initialPayments = [
   {
     id: 1,
-    month: 'May 2025',
     amount: 25000,
-    dueDate: '2025-05-25',
+    startDate: '2025-05-20',
+    endDate: '2025-05-25',
     status: 'Pending',
     propertyAddress: 'Apartment 302, Green Towers'
   },
   {
     id: 2,
-    month: 'April 2025',
     amount: 25000,
-    dueDate: '2025-04-25',
+    startDate: '2025-04-17',
+    endDate: '2025-04-25',
     status: 'Paid',
     propertyAddress: 'Apartment 302, Green Towers'
   }
@@ -54,7 +54,6 @@ export default function TenantPayments() {
     switch(status.toLowerCase()) {
       case 'paid': return 'payment-status-paid';
       case 'pending': return 'payment-status-pending';
-      case 'overdue': return 'payment-status-overdue';
       default: return '';
     }
   };
@@ -81,7 +80,10 @@ export default function TenantPayments() {
                 <strong>Amount:</strong> ₹{payment.amount.toLocaleString()}
               </div>
               <div className="payment-detail">
-                <strong>Due Date:</strong> {payment.dueDate}
+                <strong>Start Date:</strong> {payment.startDate}
+              </div>
+              <div className="payment-detail">
+                <strong>End Date:</strong> {payment.endDate}
               </div>
               <div className="payment-detail">
                 <strong>Property:</strong> {payment.propertyAddress}
