@@ -1,3 +1,18 @@
+Login credentials
+
+Admin
+Username : admin@gmail.com
+password : admin
+
+Landlord
+Username : landlord@gmail.com
+password : landlord
+
+Tenant
+Username : tenant@gmail.com
+password : tenant
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
