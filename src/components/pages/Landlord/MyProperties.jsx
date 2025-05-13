@@ -6,6 +6,7 @@ const sampleProperties = [
     id: 1,
     title: "Spacious 2BHK in HSR Layout",
     location: "Bangalore",
+    address:"123 Nagar , Bangalore",
     pincode: "560102",
     price: 18000,
     type: "Apartment",
@@ -23,6 +24,7 @@ const sampleProperties = [
     id: 2,
     title: "Modern Studio Apartment",
     location: "Pune",
+    address:"123 Street Pune",
     pincode: "411001",
     price: 12000,
     type: "Studio",
@@ -69,9 +71,16 @@ export default function MyProperties() {
               </div>
               
               <div className="property-description">
+                <strong>Address:</strong>
+                <p>{property.address}</p>
+              </div>
+
+              <div className="property-description">
                 <strong>Description:</strong>
                 <p>{property.description}</p>
               </div>
+
+
               
               <div className="property-amenities">
                 <strong>Amenities:</strong>

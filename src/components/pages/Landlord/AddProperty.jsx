@@ -5,6 +5,7 @@ export default function AddProperty() {
   const [formData, setFormData] = useState({
     title: "",
     location: "",
+    Address: "",
     pincode: "", // Added pincode field
     price: "",
     type: "",
@@ -56,6 +57,14 @@ export default function AddProperty() {
           name="location"
           placeholder="Location"
           value={formData.location}
+          onChange={handleChange}
+          required
+        />
+        <input
+          type="text"
+          name="address"
+          placeholder="Address"
+          value={formData.Address}
           onChange={handleChange}
           required
         />

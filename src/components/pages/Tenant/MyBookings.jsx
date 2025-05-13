@@ -6,6 +6,7 @@ const bookings = [
     id: 1,
     propertyTitle: "Modern 2 BHK Flat",
     location: "Bangalore",
+    address:"123 Nagar Bangalore",
     pincode: "560001",
     price: 15000,
     type: "Apartment",
@@ -22,6 +23,7 @@ const bookings = [
     id: 2,
     propertyTitle: "1 RK Studio Apartment",
     location: "Hyderabad",
+    address:"123 Nagar Hyderabad",
     pincode: "500001",
     price: 8000,
     type: "Studio",
@@ -66,6 +68,8 @@ export default function MyBookings() {
                 <p><strong>Furnishing Status:</strong> {booking.furnishing}</p>
                 <p><strong>Property Size:</strong> {booking.size} sq.ft</p>
                 <p><strong>Contact Number:</strong> {booking.contact}</p>
+                <p><strong>Address:</strong> {booking.address}</p>
+
               </div>
               
               <div className="tenant-mybookings-amenities">
